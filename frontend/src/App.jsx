@@ -38,12 +38,14 @@ function App() {
     <div>
       <form onSubmit={handleSubmit}>
         <label>Enter number</label>
+        <br />
         <input
           type="text"
           name="fact"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
         />
+        <br />
         <button type="submit">Get factorial</button>
       </form>
       <br />
