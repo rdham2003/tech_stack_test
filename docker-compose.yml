@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    image: your-image-name
+    volumes:
+      - ./backend:/app/backend
+      - db_data:/app/backend/database
+    ports:
+      - "5000:5000"
+volumes:
+  db_data:
